@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #000000, #423d57, #000000);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el encabezado */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.RegistroUser {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dividir en dos columnas */
+    gap: 20px;
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    border-radius: 10px;
+}
+
+/* Estilo para el formulario de registro */
+#registroForm {
+    background-color: #ffffffe6;
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+input[type="date"] {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para el botón de registro */
+input[type="submit"] {
+    background-color: #1a497b;
+    color: #fff;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Estilo para la tabla de usuarios */
+#user-table {
+    width: auto;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#user-table th,
+#user-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#user-table th {
+    background-color: #1a497b;
+    color: #fff;
+}
+
+/* Estilo para los mensajes de error */
+#mensajePassword {
+    color: red;
+}
+
+/* Estilo para el contenedor de enfermedades contagiosas */
+#enfermedadesContagiosas {
+    display: none;
+}
+
+/* Estilo para el campo de selección de enfermedades */
+select {
+    width: 100%;
+}
+
+/* Estilo para el campo de selección de enfermedades contagiosas */
+#casillaEnfermedadesContagiosas {
+    width: 100%;
+}
+
+/* Mostrar el campo de enfermedades contagiosas cuando se selecciona "Sí" */
+#enfermedades[value="si"] ~ #enfermedadesContagiosas {
+    display: block;
+}

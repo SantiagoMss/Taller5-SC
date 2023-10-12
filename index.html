@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    <form id="registroForm">
+        <h1>Registro de Usuario</h1>
+        <div class="RegistroUser">
+            <div>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div>
+            <div>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+            </div>
+           
+            <div>
+                <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
+            </div>
+            <div>
+                <input type="text" id="usuario" name="usuario" placeholder="Nombre de Usuario" required>
+            </div>
+            <div>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            </div>
+            <div>
+                <input type="password" id="confirmarPassword" name="confirmarPassword" placeholder="Confirmar Contraseña" required>
+                <span id="mensajePassword"></span>
+            </div>
+            <div>
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" placeholder="Fecha de Nacimiento" required>
+                <span id="edad"></span>
+            </div>
+            <div>
+                <label for="enfermedades">¿Ha sufrido de enfermedades?</label>
+                <select id="enfermedades" name="enfermedades">
+                    <option value="no">No</option>
+                    <option value="si">Sí</option>
+                </select>
+            </div>
+            <div id="enfermedadesContagiosas" style="display: none;">
+                <label for="casillaEnfermedadesContagiosas">Especifique las enfermedades contagiosas:</label>
+                <input type="text" id="casillaEnfermedadesContagiosas" name="casillaEnfermedadesContagiosas">
+            </div>
+            
+        </div>
+        <div>
+            <div>
+                <input type="submit" value="Registrarse">
+            </div>
+        </div>
+
+        <div>
+            <table id="user-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Nombre de usuario</th>
+                        <th>Email</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+                        <th>Website</th>
+                        <th>Empresa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se cargarán los datos de los usuarios -->
+                </tbody>
+            </table>
+            <script src="script.js"></script>
+        </div>
+    </form>
+</body>
+</html>
